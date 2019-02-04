@@ -1,0 +1,12 @@
+odroid-install/
+odroid-devel/
+odroid-build/
+.catkin_tools/
+build/
+devel/
+logs/
+/.metadata/
+src/preprocessing/resources
+src/write_images/resources
+**/*.swp
+**/*.pyc
