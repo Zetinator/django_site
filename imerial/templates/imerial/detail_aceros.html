@@ -1,0 +1,497 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="es-MX">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>IMERIAL</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/vendor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/main.css' %}">
+
+    <!-- script
+    ================================================== -->
+    <script src="{% static 'imerial/js/modernizr.js' %}"></script>
+    <script src="{% static 'imerial/js/pace.min.js' %}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="logo_relleno.ico" type="image/x-icon">
+    <link rel="icon" href="{% static '/imerial/images/logo_relleno.ico' %}" type="image/x-icon">
+
+</head>
+
+</head>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c48fbacab5284048d0e4ca3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="{% url 'imerial:index' %}">
+                <img src="{% static '/imerial/images/merial_red.svg' %}" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="row header-nav-wrap wide">
+            <ul class="header-main-nav">
+                <li class="current"><a href="{% url 'imerial:index' %}" title="intro">Home</a></li>
+                <li><a href="{% url 'imerial:index' %}" title="about">Nosotros</a></li>
+                <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
+                <li><a href="{% url 'imerial:servicios' %}" title="pricing">Servicios</a></li>
+                <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+            </ul>
+
+            <ul class="header-social">
+                <li><abbr title="Llamanos!" style="color:#ffffff; border: none; text-decoration: none;">(744) 4 86 6868</abbr></li>
+                <li><a href="https://www.facebook.com/imerialcocinas" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="https://wa.me/5217445880836/?text=Hola+necesito+una+cotizaci%C3%B3n+de+un+producto" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Imerial2" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end header -->
+
+    <!-- page header
+    ================================================== -->
+    <section id="features" class="page-header s-features target-section">
+
+        <div class="row page-header__content narrower text-center">
+            <div btn btn--stroke large full-width
+                <h3 class="subhead">Productos</h3>
+                <h1 class="display-1">
+                    Inmobiliario de acero inoxidable
+                </h1>
+
+                <a href="#0" class="page-header__search-trigger">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span>Buscador de productos</span>
+                </a>
+                <div class="page-header__search">
+                    <form role="search" method="get" class="page-header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Buscar por:</span>
+                            <input type="search" class="search-field" placeholder="" value="" name="s" title=":" autocomplete="off">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+
+                    <a href="#0" title="Close Search" class="page-header__overlay-close">Close</a>
+                </div>  <!-- end page-header__search -->
+
+            </div>
+        </div>
+
+    </section> <!-- end page-header -->
+
+    <!-- blog content wrap
+    ================================================== -->
+    <section id="features" class="blog-content-wrap">
+
+        <div class="row entries-wrap add-top-padding">
+            <div class="entries">
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/mesa_isla.png' %}" data-fancybox="gallery" data-caption="Mesa en isla con repisa y entrepaño de acero inoxidable">
+                                <img src="{% static 'imerial/images/thumbs/productos/mesa_isla.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Mesa en isla con repisa y entrepaño de acero inoxidable</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Acero inoxidable t304 medidas: 140x70x90, medida de la repisa: 140x30x40,
+                                  desarmable con refuerzos en cubierta y entrepaño todo fabricado en calibres 18 y 20.
+                                </p>
+                                <a id="Mesa en isla con repisa y entrepaño de acero inoxidable" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/mesa_muro.jpg' %}" data-fancybox="gallery" data-caption="Mesa de trabajo estándar de acero inoxidable - 72 x 30">
+                                <img src="{% static 'imerial/images/thumbs/productos/mesa_muro.jpg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Mesa de trabajo estándar de acero inoxidable - 72 x 30</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Para usar en cualquier cocina comercial y planta procesadora de alimentos, resistente a óxido y corrosión.
+                                  Fácil de lavar, patas tubulares de acero de 1 5/8" de diámetro con repisa inferior ajustable.
+                                  Mesa de 35" de alto, protege la pared y el piso de los derrames y las salpicaduras, patas y repisa galvanizadas.
+                                  Patas de plástico para nivelación.
+                                </p>
+                                <a id="Mesa de trabajo estándar de acero inoxidable - 72 x 30" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/mesa_con_tarja.png' %}" data-fancybox="gallery" data-caption="Mesa de Trabajo con Tarja MFL">
+                                <img src="{% static 'imerial/images/thumbs/productos/mesa_con_tarja.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Mesa de Trabajo con Tarja MFL</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Tarja con medida 0.40×0.40×0.30 m de profundidad, cubierta de acero inoxidable T304 calibre 18,
+                                  refuerzos de lamina galvanizada calibre 18, entrepaño de acero inoxidable T30 calibre 18.
+
+
+                                </p>
+                                <a id="Mesa de Trabajo con Tarja MFL" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/fregadero_doble.png' %}" data-fancybox="gallery" data-caption="Tarja Industriales Fregadero Lavaloza Lavatrastes doble">
+                                <img src="{% static 'imerial/images/thumbs/productos/fregadero_doble.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Tarja industriales fregadero lavaloza lavatrastes doble</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Fabricada en su totalidad en acero inoxidable 304 grado alimenticio en la cubierta y las patas.
+                                  Medidas de la cubierta: grande: 200cm x 70cm x 90cm.
+                                </p>
+                                <a id="Tarja Industriales Fregadero Lavaloza Lavatrastes doble" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/campama_europeo.png' %}" data-fancybox="gallery" data-caption="Campana tipo cúbica de acero inoxidable">
+                                <img src="{% static 'imerial/images/thumbs/productos/campama_europeo.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Campana tipo cúbica de acero inoxidable</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Campana de extracción a muro medidas: 200 x 90  x 50cm
+                                  Campana de acero inoxidable tipo cúbica fabricada en calibre 18 y 20 T304
+                                  incluye filtros y lampara de capelo.
+                                </p>
+                                <a id="Campana tipo cúbica de acero inoxidable" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/campana_rabona.png' %}" data-fancybox="gallery" data-caption="Campana rabona">
+                                <img src="{% static 'imerial/images/thumbs/productos/campana_rabona.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Campana rabona</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Campana industrial acero inoxidable T304, medidas: 200 x 90 x 40,
+                                  fabricada en calibre 20 y 18, incluye filtros tipo laberinto y lampara de capelo.
+                                </p>
+                                <a id="Campana rabona" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/lavamanos.png' %}" data-fancybox="gallery" data-caption="Lavamanos de acero inoxidable T304">
+                                <img src="{% static 'imerial/images/thumbs/productos/lavamanos.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Lavamanos de acero inoxidable T304</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Lavamanos fabricado en su totalidad en acero inoxidable T304 calibre 18,
+                                  tarja de 28 x 28 x 15 cm, acero inoxidable tipo 304
+                                </p>
+                                <a id="Lavamanos de acero inoxidable T304" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/mesa_de_tajo.jpg' %}" data-fancybox="gallery" data-caption="Mesa de tajo con lambrín sin entrepaño">
+                                <img src="{% static 'imerial/images/thumbs/productos/mesa_de_tajo.jpg' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Mesa de tajo con lambrín sin entrepaño</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Mesa tajo a muro fabricado su marco perimetral para sostener
+                                  tajo de nylamid blanco de 3/4" de espesor en calibre 18.
+                                  Montado sobre estructura tubular de 1 1/2" y de  1 1/4"
+                                </p>
+                                <a id="Mesa de tajo con lambrín sin entrepaño" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/ayuda.png' %}" data-fancybox="gallery" data-caption="No escontró lo que buscaba?">
+                                <img src="{% static 'imerial/images/thumbs/productos/ayuda.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">No escontró lo que buscaba?</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Envienos un correo, se lo podemos conseguir ;)
+                                </p>
+                                <a id="???" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Solicitar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+            </div> <!-- end entries -->
+        </div> <!-- end entries-wrap -->
+
+    </section> <!-- end blog content wrap -->
+
+    <!-- Submit the form -->
+    <section id="cotizacion" class="comments-wrap">
+
+      <div class="row comment-respond">
+
+          <!-- START respond -->
+          <div id="respond" class="col-full">
+
+              <h3>Cotización de <spand id="producto_a_cotizar"><span></h3>
+              <br>
+              <h3><span>Te responderemos a la brevedad...</span></h3>
+
+              <form name="contactForm" id="contactForm" method="post" action="{% url 'imerial:detail_aceros' %}" autocomplete="off"> {% csrf_token %}
+                  <fieldset>
+
+                      {% for field in form %}
+                          <div class="form-field">
+                              {{ field.errors }}
+                              {{ field }}
+                          </div>
+                      {% endfor %}
+
+                      <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large full-width" value="Enviar" type="submit">
+                      {% if messages %}
+                      <ul class="messages">
+                        {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+
+                  </fieldset>
+              </form> <!-- end form -->
+
+          </div>
+          <!-- END respond-->
+
+      </div> <!-- end comment-respond -->
+
+  </section> <!-- end submit the form -->
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+        <div class="row footer__top" id="contacto">
+            <div class="col-six md-full">
+                <h1 class="display-2">
+                    Hay que manternos en contacto.
+                </h1>
+                <p class="lead">
+                    Suscribete para recibir ofertas especiales.
+                </p>
+            </div>
+            <div class="col-six md-full footer__subscribe end">
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Correo electrónico" required="">
+
+                        <input type="submit" name="subscribe" value="Suscribete">
+
+                        <label for="mc-email" class="subscribe-message"></label>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer__bottom">
+            <div class="col-five tab-full">
+                <div class="footer__logo">
+                    <a href="{% url 'imerial:index' %}">
+                      <img src="{% static 'imerial/images/merial_red.svg' %}" alt="Homepage">
+                    </a>
+                </div>
+
+                <p>
+                    <a href="https://goo.gl/maps/JSvmbzaPJuK2" target="_blank">
+                        Av Cuauhtémoc 169, Progreso, 39999 Acapulco, Gro.
+                    </a>
+                <br>
+                Tel: (744) 486 6868, (744) 486 6866
+
+                </p>
+
+                <ul class="footer__social">
+                    <li><a href="https://www.facebook.com/imerialcocinas" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.me/5217445880836/?text=Hola+necesito+una+cotizaci%C3%B3n+de+un+producto" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/Imerial2" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six tab-full end">
+                <ul class="footer__site-links">
+                  <li><a class="smoothscroll" href="#home" title="intro">Home</a></li>
+                  <li><a href="{% url 'imerial:index' %}" title="about">Nosotros</a></li>
+                  <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
+                  <li><a href="{% url 'imerial:servicios' %}" title="pricing">Servicios</a></li>
+                  <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+                    <!-- <li><a href="blog.html" title="blog">Contacto</a></li> -->
+                </ul>
+
+                <p class="footer__contact">
+                    Deseas información sobre nuestros productos? Envianos un correo ;) <br>
+                    <a href="mailto:imerial.ventas@gmail.com" class="footer__mail-link">imerial.ventas@gmail.com</a>
+                </p>
+
+                <div class="cl-copyright" style="display:none">
+                    <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'imerial/js/jquery-3.2.1.min.js' %}"></script>
+    <!-- Gallery cool effect -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="{% static 'imerial/js/plugins.js' %}"></script>
+    <script src="{% static 'imerial/js/main.js' %}"></script>
+
+    <script>
+      $(".btn--stroke").click(function(e){
+        var idProducto = e.target.id;
+        $("#producto_a_cotizar").html(idProducto);
+        $("#Message").val("Me gustaría recibir una cotización del producto: " + idProducto);
+      });
+    </script>
+
+</body>

@@ -1,0 +1,305 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="es-MX">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>IMERIAL</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/vendor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/main.css' %}">
+
+    <!-- script
+    ================================================== -->
+    <script src="{% static 'imerial/js/modernizr.js' %}"></script>
+    <script src="{% static 'imerial/js/pace.min.js' %}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="logo_relleno.ico" type="image/x-icon">
+    <link rel="icon" href="{% static '/imerial/images/logo_relleno.ico' %}" type="image/x-icon">
+
+</head>
+
+</head>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c48fbacab5284048d0e4ca3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="{% url 'imerial:index' %}">
+                <img src="{% static '/imerial/images/merial_red.svg' %}" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="row header-nav-wrap wide">
+            <ul class="header-main-nav">
+                <li class="current"><a href="{% url 'imerial:index' %}" title="intro">Home</a></li>
+                <li><a href="{% url 'imerial:index' %}" title="about">Nosotros</a></li>
+                <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
+                <li><a class="smoothscroll" href="#pricing" title="pricing">Servicios</a></li>
+                <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+            </ul>
+
+            <ul class="header-social">
+                <li><abbr title="Llamanos!" style="color:#ffffff; border: none; text-decoration: none;">(744) 4 86 6868</abbr></li>
+                <li><a href="https://www.facebook.com/imerialcocinas" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="https://wa.me/5217445880836/?text=Hola+necesito+una+cotizaci%C3%B3n+de+un+producto" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Imerial2" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end header -->
+
+    <!-- page header
+    ================================================== -->
+    <section id="pricing" class="page-header s-features target-section">
+
+        <div class="row page-header__content narrower text-center">
+            <div btn btn--stroke large full-width
+                <h3 class="subhead">Servicios</h3>
+                <h1 class="display-1">
+                    Conoce nuestros servicios
+                </h1>
+
+            </div>
+        </div>
+
+    </section> <!-- end page-header -->
+
+    <!-- pricing
+    ================================================== -->
+    <section id="pricing" class="s-pricing target-section" >
+
+      <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'imerial/images/estufa_1400.png' %}"></div>
+      <div class="parallax-window" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="{% static 'imerial/images/estufa_1400.png' %}" data-natural-width="1400" data-natural-height="1400"></div> -->
+        <div class="row plans block-1-3 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" data-aos="fade-up">
+                <div class="item-plan__block">
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">SERVICIO TÉCNICO</h3>
+                        <p>Brindamos servicio técnico tanto correctivo como preventivo a través de nuestros técnicos especializados para tu negocio.</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <a id="SERVICIO TÉCNICO" class="smoothscroll btn btn--stroke large full-width" href="#info">Seleccionar</a>
+                    </div>
+
+                </div>
+            </div> <!-- end item-plan -->
+
+            <div class="col-block item-plan item-plan--popular" data-aos="fade-up">
+                <div class="item-plan__block">
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">REFACCIONES</h3>
+                        <p>De nuestro almacén de refacciones y partes originales asegurando que su equipo se mantenga en óptimas condiciones </p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <a id="REFACCIONES" class="smoothscroll btn btn--stroke large full-width" href="#info">Seleccionar</a>
+                    </div>
+
+                </div>
+            </div> <!-- end item-plan -->
+
+            <div class="col-block item-plan" data-aos="fade-up">
+                <div class="item-plan__block">
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">ATENCIÓN A CLIENTES</h3>
+                        <p>Responderemos a la brevedad cualquier tipo de dudas o aclaraciones sobre nuestros equipos y servicios.</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <a id="ATENCIÓN A CLIENTES" class="smoothscroll btn btn--stroke large full-width" href="#info">Seleccionar</a>
+                    </div>
+
+                </div>
+            </div> <!-- end item-plan -->
+
+        </div> <!-- end plans -->
+
+      </section>  <!-- end servicios -->
+
+      <!-- Submit the form -->
+      <section id="info" class="comments-wrap">
+
+        <div class="row comment-respond">
+
+            <!-- START respond -->
+            <div id="respond" class="col-full">
+
+                <h3 id="servicio_elegido">Cómo te podemos ayudar? (selecciona algo)</h3>
+                <br>
+                <h3><span>Te responderemos a la brevedad...</span></h3>
+
+                <form name="contactForm" id="contactForm" method="post" action="{% url 'imerial:servicios' %}" autocomplete="off"> {% csrf_token %}
+                    <fieldset>
+
+                        {% for field in form %}
+                            <div class="form-field">
+                                {{ field.errors }}
+                                {{ field }}
+                            </div>
+                        {% endfor %}
+
+                        <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large full-width" value="Enviar" type="submit">
+                        {% if messages %}
+                        <ul class="messages">
+                          {% for message in messages %}
+                          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                          {% endfor %}
+                        </ul>
+                        {% endif %}
+
+                    </fieldset>
+                </form> <!-- end form -->
+
+            </div>
+            <!-- END respond-->
+
+        </div> <!-- end comment-respond -->
+
+    </section> <!-- end submit the form -->
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+        <div class="row footer__top" id="contacto">
+            <div class="col-six md-full">
+                <h1 class="display-2">
+                    Hay que manternos en contacto.
+                </h1>
+                <p class="lead">
+                    Suscribete para recibir ofertas especiales.
+                </p>
+            </div>
+            <div class="col-six md-full footer__subscribe end">
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Correo electrónico" required="">
+
+                        <input type="submit" name="subscribe" value="Suscribete">
+
+                        <label for="mc-email" class="subscribe-message"></label>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer__bottom">
+            <div class="col-five tab-full">
+                <div class="footer__logo">
+                    <a href="{% url 'imerial:index' %}">
+                      <img src="{% static 'imerial/images/merial_red.svg' %}" alt="Homepage">
+                    </a>
+                </div>
+
+                <p>
+                    <a href="https://goo.gl/maps/JSvmbzaPJuK2" target="_blank">
+                        Av Cuauhtémoc 169, Progreso, 39999 Acapulco, Gro.
+                    </a>
+                <br>
+                Tel: (744) 486 6868, (744) 486 6866
+
+                </p>
+
+                <ul class="footer__social">
+                    <li><a href="https://www.facebook.com/imerialcocinas" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.me/5217445880836/?text=Hola+necesito+una+cotizaci%C3%B3n+de+un+producto" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/Imerial2" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six tab-full end">
+                <ul class="footer__site-links">
+                  <li class="current"><a href="{% url 'imerial:index' %}" title="intro">Home</a></li>
+                  <li><a href="{% url 'imerial:index' %}#about" title="about">Nosotros</a></li>
+                  <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
+                  <li><a class="smoothscroll" href="#pricing" title="pricing">Servicios</a></li>
+                  <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+                    <!-- <li><a href="blog.html" title="blog">Contacto</a></li> -->
+                </ul>
+
+                <p class="footer__contact">
+                    Deseas información sobre nuestros productos? Envianos un correo ;) <br>
+                    <a href="mailto:imerial.ventas@gmail.com" class="footer__mail-link">imerial.ventas@gmail.com</a>
+                </p>
+
+                <div class="cl-copyright" style="display:none">
+                    <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'imerial/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'imerial/js/plugins.js' %}"></script>
+    <script src="{% static 'imerial/js/main.js' %}"></script>
+    <script src="{% static 'imerial/js/parallax.min.js' %}"></script>
+
+    <script>
+      $(".btn--stroke").click(function(e){
+        var idProducto = e.target.id;
+        $("#servicio_elegido").html(idProducto);
+        $("#Message").val("Me gustaría recibir el seguiente servicio: " + idProducto);
+      });
+    </script>
+
+</body>

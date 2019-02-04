@@ -1,0 +1,493 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="es-MX">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>IMERIAL</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/vendor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/main.css' %}">
+
+    <!-- script
+    ================================================== -->
+    <script src="{% static 'imerial/js/modernizr.js' %}"></script>
+    <script src="{% static 'imerial/js/pace.min.js' %}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="logo_relleno.ico" type="image/x-icon">
+    <link rel="icon" href="{% static '/imerial/images/logo_relleno.ico' %}" type="image/x-icon">
+
+</head>
+
+</head>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c48fbacab5284048d0e4ca3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="{% url 'imerial:index' %}">
+                <img src="{% static '/imerial/images/merial_red.svg' %}" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="row header-nav-wrap wide">
+            <ul class="header-main-nav">
+                <li class="current"><a href="{% url 'imerial:index' %}" title="intro">Home</a></li>
+                <li><a href="{% url 'imerial:index' %}" title="about">Nosotros</a></li>
+                <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
+                <li><a href="{% url 'imerial:servicios' %}" title="pricing">Servicios</a></li>
+                <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+            </ul>
+
+            <ul class="header-social">
+                <li><abbr title="Llamanos!" style="color:#ffffff; border: none; text-decoration: none;">(744) 4 86 6868</abbr></li>
+                <li><a href="https://www.facebook.com/imerialcocinas" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="https://wa.me/5217445880836/?text=Hola+necesito+una+cotizaci%C3%B3n+de+un+producto" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Imerial2" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end header -->
+
+    <!-- page header
+    ================================================== -->
+    <section id="features" class="page-header s-features target-section">
+
+        <div class="row page-header__content narrower text-center">
+            <div btn btn--stroke large full-width
+                <h3 class="subhead">Productos</h3>
+                <h1 class="display-1">
+                    Refrigeradores y congeladores
+                </h1>
+
+                <a href="#0" class="page-header__search-trigger">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span>Buscador de productos</span>
+                </a>
+                <div class="page-header__search">
+                    <form role="search" method="get" class="page-header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Buscar por:</span>
+                            <input type="search" class="search-field" placeholder="" value="" name="s" title=":" autocomplete="off">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+
+                    <a href="#0" title="Close Search" class="page-header__overlay-close">Close</a>
+                </div>  <!-- end page-header__search -->
+
+            </div>
+        </div>
+
+    </section> <!-- end page-header -->
+
+    <!-- blog content wrap
+    ================================================== -->
+    <section id="features" class="blog-content-wrap">
+
+        <div class="row entries-wrap add-top-padding">
+            <div class="entries">
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/rv2p36-ojeda.jpg' %}" data-fancybox="gallery" data-caption="Refrigerador 2 puertas ojeda RV2P-32 NI">
+                                <img src="{% static 'imerial/images/thumbs/productos/rv2p36-ojeda.jpg' %}" alt="">
+                            </a>
+                        </div>
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Refrigerador 2 puertas ojeda RV2P-32 NI</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Control electrónico de temperatura programado en fábrica para su óptimo funcionamiento dentro de un rango de temperatura de 0ºC a 6ºC.
+                                </p>
+                                <a id="Refrigerador 2 puertas ojeda RV2P-32 NI" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/rvp-500-ojeda.jpg' %}" data-fancybox="gallery" data-caption="ENFRIADOR RVP-500 OJEDA">
+                                <img src="{% static 'imerial/images/thumbs/productos/rvp-500-ojeda.jpg' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">ENFRIADOR RVP-500 OJEDA</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Condensador de libre mantenimiento, ciclo automático de deshielo, control electrónico de temperatura,
+                                  componentes de fácil acceso para reparaciones, bandeja por tubo de gas caliente de evaporación.
+                                </p>
+                                <a id="ENFRIADOR RVP-500 OJEDA" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/rv4p36-ojeda.jpg' %}" data-fancybox="gallery" data-caption="ENFRIADOR RV4P-36 OJEDA">
+                                <img src="{% static 'imerial/images/thumbs/productos/rv4p36-ojeda.jpg' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">ENFRIADOR RV4P-36 OJEDA</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Condensador de libre mantenimiento, ciclo automático de deshielo, control electrónico de temperatura,
+                                  componentes de fácil acceso para reparaciones, bandeja por tubo de gas caliente de evaporación.
+                                </p>
+                                <a id="ENFRIADOR RV4P-36 OJEDA" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/cfx-11-nr.png' %}" data-fancybox="gallery" data-caption="Enfriador Vertical CFX-11 SL">
+                                <img src="{% static 'imerial/images/thumbs/productos/cfx-11-nr.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Enfriador Vertical CFX-11 SL</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Control Inteligente de Temperatura i-TEC, compresor de última generación, condensador de bajo mantenimiento,
+                                  sistema de iluminación con LEDS de alta intensidad.
+
+                                </p>
+                                <a id="Enfriador Vertical CFX-11 SL" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/ctcc-25-inox.png' %}" data-fancybox="gallery" data-caption="Congeladores Horizontales CTCC-25-INOX">
+                                <img src="{% static 'imerial/images/thumbs/productos/ctcc-25-inox.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Congeladores Horizontales CTCC-25-INOX</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Aislamiento ecológico con agente espumantes C5 (Ciclopentano), evaporador y
+                                  condensador estático, 1 canastilla de alambre para exhibición,
+                                  luz indicadora de encendido, puerta sólida con jaladera embutida, desagüe interior,
+                                </p>
+                                <a id="Congeladores Horizontales CTCC-25-INOX" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/CTCC15_11.jpg' %}" data-fancybox="gallery" data-caption="Congeladores Horizontales CTCC-15-INOX">
+                                <img src="{% static 'imerial/images/thumbs/productos/CTCC15_11.jpg' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Congeladores Horizontales CTCC-15-INOX</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Aislamiento ecológico con agente espumantes C5 (Ciclopentano), evaporador y condensador estático,
+                                  1 canastilla de alambre para exhibición, luz indicadora de encendido, puerta sólida con jaladera embutida,
+                                  desagüe interior
+                                </p>
+                                <a id="Congeladores Horizontales CTCC-15-INOX" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/cat-11.png' %}" data-fancybox="gallery" data-caption="Congeladores Horizontales CAT-11">
+                                <img src="{% static 'imerial/images/thumbs/productos/cat-11.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Congeladores Horizontales CAT-11</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Aislamiento ecológico con agente espumantes C5 (Ciclopentano), ruedas giratorias,
+                                  puertas superiores deslizables curvas, evaporador y condensador estático, tubería
+                                  de pre-condensado con motor ventilados,
+                                </p>
+                                <a id="Congeladores Horizontales CAT-11" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/cch-15.png' %}" data-fancybox="gallery" data-caption="Congeladores Horizontales CCH-15">
+                                <img src="{% static 'imerial/images/thumbs/productos/cch-15.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">Congeladores Horizontales CCH-15</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Aislamiento ecológico con agente espumantes C5 (Ciclopentano), puertas deslizables y desmontables, evaporador y condensador estático.
+                                </p>
+                                <a id="Congeladores Horizontales CCH-15" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Cotizar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+
+                <article class="col-block">
+
+                    <div class="item-entry" data-aos="fade-up">
+                        <div class="item-entry__thumb">
+                            <a href="{% static 'imerial/images/thumbs/productos/ayuda.png' %}" data-fancybox="gallery" data-caption="No escontró lo que buscaba?">
+                                <img src="{% static 'imerial/images/thumbs/productos/ayuda.png' %}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__title"><a href="">No escontró lo que buscaba?</a></h1>
+
+                            <div class="item-entry__content">
+                                <p>
+                                  Envienos un correo, se lo podemos conseguir ;)
+                                </p>
+                                <a id="???" class="smoothscroll btn btn--stroke large full-width" href="#cotizacion">Solicitar Producto</a>
+                            </div>
+                        </div>
+                    </div> <!-- item-entry -->
+
+                </article> <!-- end article -->
+            </div> <!-- end entries -->
+        </div> <!-- end entries-wrap -->
+
+    </section> <!-- end blog content wrap -->
+
+    <!-- Submit the form -->
+    <section id="cotizacion" class="comments-wrap">
+
+      <div class="row comment-respond">
+
+          <!-- START respond -->
+          <div id="respond" class="col-full">
+
+              <h3>Cotización de <spand id="producto_a_cotizar"><span></h3>
+              <br>
+              <h3><span>Te responderemos a la brevedad...</span></h3>
+
+              <form name="contactForm" id="contactForm" method="post" action="{% url 'imerial:detail_refrigeracion' %}" autocomplete="off"> {% csrf_token %}
+                  <fieldset>
+
+                      {% for field in form %}
+                          <div class="form-field">
+                              {{ field.errors }}
+                              {{ field }}
+                          </div>
+                      {% endfor %}
+
+                      <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large full-width" value="Enviar" type="submit">
+                      {% if messages %}
+                      <ul class="messages">
+                        {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+
+                  </fieldset>
+              </form> <!-- end form -->
+
+          </div>
+          <!-- END respond-->
+
+      </div> <!-- end comment-respond -->
+
+  </section> <!-- end submit the form -->
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+        <div class="row footer__top" id="contacto">
+            <div class="col-six md-full">
+                <h1 class="display-2">
+                    Hay que manternos en contacto.
+                </h1>
+                <p class="lead">
+                    Suscribete para recibir ofertas especiales.
+                </p>
+            </div>
+            <div class="col-six md-full footer__subscribe end">
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Correo electrónico" required="">
+
+                        <input type="submit" name="subscribe" value="Suscribete">
+
+                        <label for="mc-email" class="subscribe-message"></label>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer__bottom">
+            <div class="col-five tab-full">
+                <div class="footer__logo">
+                    <a href="{% url 'imerial:index' %}">
+                      <img src="{% static 'imerial/images/merial_red.svg' %}" alt="Homepage">
+                    </a>
+                </div>
+
+                <p>
+                    <a href="https://goo.gl/maps/JSvmbzaPJuK2" target="_blank">
+                        Av Cuauhtémoc 169, Progreso, 39999 Acapulco, Gro.
+                    </a>
+                <br>
+                Tel: (744) 486 6868, (744) 486 6866
+
+                </p>
+
+                <ul class="footer__social">
+                    <li><a href="https://www.facebook.com/imerialcocinas" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.me/5217445880836/?text=Hola+necesito+una+cotizaci%C3%B3n+de+un+producto" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/Imerial2" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six tab-full end">
+                <ul class="footer__site-links">
+                  <li><a class="smoothscroll" href="#home" title="intro">Home</a></li>
+                  <li><a href="{% url 'imerial:index' %}" title="about">Nosotros</a></li>
+                  <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
+                  <li><a href="{% url 'imerial:servicios' %}" title="pricing">Servicios</a></li>
+                  <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+                    <!-- <li><a href="blog.html" title="blog">Contacto</a></li> -->
+                </ul>
+
+                <p class="footer__contact">
+                    Deseas información sobre nuestros productos? Envianos un correo ;) <br>
+                    <a href="mailto:imerial.ventas@gmail.com" class="footer__mail-link">imerial.ventas@gmail.com</a>
+                </p>
+
+                <div class="cl-copyright" style="display:none">
+                    <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'imerial/js/jquery-3.2.1.min.js' %}"></script>
+    <!-- Gallery cool effect -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="{% static 'imerial/js/plugins.js' %}"></script>
+    <script src="{% static 'imerial/js/main.js' %}"></script>
+
+    <script>
+      $(".btn--stroke").click(function(e){
+        var idProducto = e.target.id;
+        $("#producto_a_cotizar").html(idProducto);
+        $("#Message").val("Me gustaría recibir una cotización del producto: " + idProducto);
+      });
+    </script>
+
+</body>

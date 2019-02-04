@@ -1,0 +1,391 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="es-MX">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>IMERIAL</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/vendor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/main.css' %}">
+
+    <!-- script
+    ================================================== -->
+    <script src="{% static 'imerial/js/modernizr.js' %}"></script>
+    <script src="{% static 'imerial/js/pace.min.js' %}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="logo_relleno.ico" type="image/x-icon">
+    <link rel="icon" href="{% static '/imerial/images/logo_relleno.ico' %}" type="image/x-icon">
+
+</head>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c48fbacab5284048d0e4ca3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="{% url 'imerial:index' %}">
+                <img src="{% static '/imerial/images/merial_red.svg' %}" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="row header-nav-wrap wide">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#home" title="intro">Home</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">Nosotros</a></li>
+                <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
+                <li><a href="{% url 'imerial:servicios' %}" title="pricing">Servicios</a></li>
+                <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+            </ul>
+
+            <ul class="header-social">
+                <li><abbr title="Llamanos!" style="color:#ffffff; border: none; text-decoration: none;">(744) 4 86 6868</abbr></li>
+                <li><a href="https://www.facebook.com/imerialcocinas" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="https://wa.me/5217445880836/?text=Hola+necesito+una+cotizaci%C3%B3n+de+un+producto" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Imerial2" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section">
+
+        <div class="home-image-part"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main wide">
+
+                <h1>
+                IMERIAL <br>
+                </h1>
+
+                <h3>
+                Comercializadora de Cocinas y Refrigeración
+
+                </h3>
+
+                <!-- video button -->
+                <!-- <div class="home-content__button">
+                    <a class="btn-video" href="https://player.vimeo.com/video/14592941?color=00a650&title=0&byline=0&portrait=0" data-lity>
+                        <span class="video-icon"></span>
+                    </a>
+                    <a href="#download" class="smoothscroll btn btn--primary btn--large">
+                        Get The App
+                    </a>
+                </div> -->
+
+            </div> <!-- end home-content__main -->
+
+            <a href="#about" class="home-scroll smoothscroll">
+                <span class="home-scroll__text">Scroll Down</span>
+                <span class="home-scroll__icon"></span>
+            </a>
+
+        </div> <!-- end home-content -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header narrower align-center" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Nosotros
+                </h1>
+                <p class="lead">
+                    Fabricación de equipos de acero inoxidable de acuerdo a las necesidades de nuestros clientes. Contamos con la representación de las mejores marcas nacionales e internacionales de equipos para cocinas profesionales..
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Servicio.</h3>
+
+                    <p>
+                    El mejor Servicio al Cliente.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Productos.</h3>
+
+                    <p>
+                    Productos 100% con garantía, servicio y refacciones.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Garantía.</h3>
+
+                    <p>
+                    Garantía directa de fábrica.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Diseño.</h3>
+
+                    <p>
+                    Diseño sanitario y fácil de operar.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+            </div> <!-- end about-desc__slider -->
+        </div> <!-- end about-desc -->
+
+        <div class="row about-bottom-image" data-aos="fade-up">
+			<img src="{% static 'imerial/images/estufa_1400.png' %}"
+				 srcset="{% static 'imerial/images/estufa_600.png' %} 600w,
+						 {% static 'imerial/images/estufa_1400.png' %} 1400w,
+						 {% static 'imerial/images/estufa_2800.png' %} 2800w"
+                 sizes="(max-width: 2800px) 100vw, 2800px"
+                 alt="App Screenshots">
+         </div>
+
+    </section> <!-- end s-about -->
+
+
+    <!-- process
+    ================================================== -->
+    <section id="process" class="s-process">
+
+        <div class="row">
+            <div class="col-full text-center" data-aos="fade-up">
+                <h2 class="display-2">Conoce las marcas que representamos.</h2>
+            </div>
+        </div>
+
+        <div class="row process block-1-4 block-m-1-2 block-tab-full">
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <img src="{% static 'imerial/images/marcas/logo_san-son.png' %}" alt="__marca__">
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="https://www.hobart.com.mx/" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_hobart.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="https://www.hobart.com.mx/vulcan.php" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_vulcan.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="https://www.truemfg.com/NA/MX" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_true.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="http://www.averyberkel.com.mx/home.asp" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_berkel.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="https://www.coriat.com.mx/" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_coriat.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="http://www.ojeda.com.mx/" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo-ojeda.jpg' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="http://www.criotec.com.mx/" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_criotec.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="https://www.migsacv.com.mx/" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_migsa.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="https://sobrinox.com.mx" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_sobrinox.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="https://international.com.mx/" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_beca.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                  <a href="http://rhino.mx/" target="_blank">
+                    <img src="{% static 'imerial/images/marcas/logo_rhino.png' %}" alt="__marca__">
+                  </a>
+                </div>
+            </div>
+        </div> <!-- end process -->
+
+        <!-- <div class="row process-bottom-image" data-aos="fade-up">
+            <img src="images/phone-app-screens-1000.png"
+                 srcset="images/phone-app-screens-600.png 600w,
+                         images/phone-app-screens-1000.png 1000w,
+                         images/phone-app-screens-2000.png 2000w"
+                 sizes="(max-width: 2000px) 100vw, 2000px"
+                 alt="App Screenshots">
+         </div> -->
+
+    </section> <!-- end s-process -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+        <div class="row footer__top" id="contacto">
+            <div class="col-six md-full">
+                <h1 class="display-2">
+                    Hay que manternos en contacto.
+                </h1>
+                <p class="lead">
+                    Suscribete para recibir ofertas especiales.
+                </p>
+            </div>
+            <div class="col-six md-full footer__subscribe end">
+                <div class="subscribe-form">
+                  <form id="mc-form" class="group" novalidate="true">
+
+                      <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Correo electrónico" required="">
+
+                      <input type="submit" name="subscribe" value="Suscribete">
+
+                      <label for="mc-email" class="subscribe-message"></label>
+
+                  </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer__bottom">
+            <div class="col-five tab-full">
+                <div class="footer__logo">
+                    <a href="{% url 'imerial:index' %}">
+                        <img src="{% static 'imerial/images/merial_red.svg' %}" alt="Homepage">
+                    </a>
+                </div>
+
+                <p>
+                    <a href="https://goo.gl/maps/JSvmbzaPJuK2" target="_blank">
+                        Av Cuauhtémoc 169, Progreso, 39999 Acapulco, Gro.
+                    </a>
+                <br>
+                Tel: (744) 486 6868, (744) 486 6866
+
+                </p>
+
+                <ul class="footer__social">
+                    <li><a href="https://www.facebook.com/imerialcocinas" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.me/5217445880836/?text=Hola+necesito+una+cotizaci%C3%B3n+de+un+producto" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/Imerial2" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six tab-full end">
+                <ul class="footer__site-links">
+                    <li class="current"><a class="smoothscroll" href="#home" title="intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">Nosotros</a></li>
+                    <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
+                    <li><a href="{% url 'imerial:servicios' %}" title="pricing">Servicios</a></li>
+                    <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+                    <!-- <li><a href="blog.html" title="blog">Contacto</a></li> -->
+                </ul>
+
+                <p class="footer__contact">
+                    Deseas información sobre nuestros productos? Envianos un correo ;) <br>
+                    <a href="mailto:imerial.ventas@gmail.com" class="footer__mail-link">imerial.ventas@gmail.com</a>
+                </p>
+
+                <div class="cl-copyright" style="display:none">
+                    <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'imerial/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'imerial/js/plugins.js' %}"></script>
+    <script src="{% static 'imerial/js/main.js' %}"></script>
+
+</body>
