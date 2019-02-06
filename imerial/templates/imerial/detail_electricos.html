@@ -19,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/base.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/vendor.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/main.css' %}">
+    <link rel="stylesheet" href="{% static '/imerial/css/tipueslide/tipueslide.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
 
     <!-- script
     ================================================== -->
@@ -49,6 +52,8 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 <body id="top">
+  <div class="tipue-slide-toggle tipue-slide-screen"></div><div id="tipue-slide"></div>
+
 
     <div id="preloader">
         <div id="loader"></div>
@@ -97,21 +102,10 @@ s0.parentNode.insertBefore(s1,s0);
                     Equipos eléctricos y cafeteras
                 </h1>
 
-                <a href="#0" class="page-header__search-trigger">
+                <a href="#0" class="page-header__search-trigger tipue-slide-toggle">
                     <i class="fas fa-search" aria-hidden="true"></i>
                     <span>Buscador de productos</span>
                 </a>
-                <div class="page-header__search">
-                    <form role="search" method="get" class="page-header__search-form" action="#">
-                        <label>
-                            <span class="hide-content">Buscar por:</span>
-                            <input type="search" class="search-field" placeholder="" value="" name="s" title=":" autocomplete="off">
-                        </label>
-                        <input type="submit" class="search-submit" value="Search">
-                    </form>
-
-                    <a href="#0" title="Close Search" class="page-header__overlay-close">Close</a>
-                </div>  <!-- end page-header__search -->
 
             </div>
         </div>
@@ -476,6 +470,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
     <script src="{% static 'imerial/js/plugins.js' %}"></script>
     <script src="{% static 'imerial/js/main.js' %}"></script>
+    <script src="{% static 'imerial/js/tipueslide/tipueslide_content.js' %}"></script>
+    <script src="{% static 'imerial/js/tipueslide/tipueslide.js' %}"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('.tipue-slide-screen').tipueslide();
+    });
+    </script>
+
 
     <script>
       $(".btn--stroke").click(function(e){
