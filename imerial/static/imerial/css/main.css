@@ -4760,4 +4760,11 @@ body.search-is-visible {
     background: transparent;
 }
 
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.05); 
+}
+
 /*# sourceMappingURL=main.css.map */
