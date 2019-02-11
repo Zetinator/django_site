@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/base.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/vendor.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/main.css' %}">
+    <link rel="stylesheet" href="{% static '/imerial/css/tipueslide/tipueslide.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
     <!-- script
     ================================================== -->
@@ -47,6 +49,8 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 <body id="top">
+  <div class="tipue-slide-toggle tipue-slide-screen"></div><div id="tipue-slide"></div>
+
 
     <div id="preloader">
         <div id="loader"></div>
@@ -61,6 +65,7 @@ s0.parentNode.insertBefore(s1,s0);
             <a class="site-logo" href="{% url 'imerial:index' %}">
                 <img src="{% static '/imerial/images/merial_red.svg' %}" alt="Homepage">
             </a>
+
         </div>
 
         <nav class="row header-nav-wrap wide">
@@ -70,6 +75,10 @@ s0.parentNode.insertBefore(s1,s0);
                 <li><a href="{% url 'imerial:productos' %}" title="features">Productos</a></li>
                 <li><a href="{% url 'imerial:servicios' %}" title="pricing">Servicios</a></li>
                 <li><a class="smoothscroll" href="#contacto" title="contacto">Contacto</a></li>
+                <li><a href="#0" class="tipue-slide-toggle">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                  <span> Buscador de productos</span>
+                </a></li>
             </ul>
 
             <ul class="header-social">
@@ -385,7 +394,18 @@ s0.parentNode.insertBefore(s1,s0);
     <!-- Java Script
     ================================================== -->
     <script src="{% static 'imerial/js/jquery-3.2.1.min.js' %}"></script>
+    <!-- Gallery cool effect -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
     <script src="{% static 'imerial/js/plugins.js' %}"></script>
     <script src="{% static 'imerial/js/main.js' %}"></script>
+    <script src="{% static 'imerial/js/tipueslide/tipueslide_content.js' %}"></script>
+    <script src="{% static 'imerial/js/tipueslide/tipueslide.js' %}"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('.tipue-slide-screen').tipueslide();
+    });
+    </script>
 
 </body>

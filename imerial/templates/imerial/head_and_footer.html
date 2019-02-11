@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="es-MX">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>IMERIAL</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/vendor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/imerial/css/main.css' %}">
+    <link rel="stylesheet" href="{% static '/imerial/css/tipueslide/tipueslide.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="{% static 'imerial/js/modernizr.js' %}"></script>
+    <script src="{% static 'imerial/js/pace.min.js' %}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="logo_relleno.ico" type="image/x-icon">
+    <link rel="icon" href="{% static '/imerial/images/logo_relleno.ico' %}" type="image/x-icon">
+
+</head>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c48fbacab5284048d0e4ca3/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<body id="top">
+  <div class="tipue-slide-toggle tipue-slide-screen"></div><div id="tipue-slide"></div>
+
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'imerial/js/jquery-3.2.1.min.js' %}"></script>
+    <!-- Gallery cool effect -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="{% static 'imerial/js/plugins.js' %}"></script>
+    <script src="{% static 'imerial/js/main.js' %}"></script>
+    <script src="{% static 'imerial/js/tipueslide/tipueslide_content.js' %}"></script>
+    <script src="{% static 'imerial/js/tipueslide/tipueslide.js' %}"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('.tipue-slide-screen').tipueslide();
+    });
+    </script>
+
+</body>
